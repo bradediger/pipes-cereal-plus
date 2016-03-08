@@ -1,0 +1,15 @@
+resolver: lts-5.5
+packages:
+- '.'
+- location:
+    git: git://github.com/bradediger/cereal-plus
+    commit: b9dc6f40c678186308f704ec54e64fc0d235f734
+  extra-dep: true
+extra-deps:
+  - cereal-plus-0.4.1
+flags: {}
+extra-package-dbs: []
+
+nix:
+  enable: true
+  packages: [git]

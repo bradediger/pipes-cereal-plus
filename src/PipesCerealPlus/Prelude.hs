@@ -1,5 +1,5 @@
-module PipesCerealPlus.Prelude 
-  ( 
+module PipesCerealPlus.Prelude
+  (
     module Exports,
     LazyByteString,
   )
@@ -49,8 +49,8 @@ import Control.Monad.Reader as Exports hiding (mapM_, sequence_, forM_, msum, ma
 import Control.Monad.Writer as Exports hiding (mapM_, sequence_, forM_, msum, mapM, sequence, forM, Any)
 import Control.Monad.Trans as Exports
 
--- errors
-import Control.Error as Exports
+-- except
+import Control.Monad.Trans.Either as Exports
 
 -- bytestring
 import Data.ByteString as Exports (ByteString)

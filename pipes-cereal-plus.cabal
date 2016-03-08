@@ -42,7 +42,7 @@ library
     PipesCerealPlus.Prelude
   build-depends:
     -- Serialization:
-    cereal-plus >= 0.3.2 && < 0.5,
+    cereal-plus >= 0.3.2,
     -- Streaming:
     pipes-bytestring == 2.1.*,
     pipes >= 4.0 && < 4.2,
@@ -50,9 +50,9 @@ library
     text,
     bytestring,
     -- Control:
-    errors == 1.4.*,
+    either,
     mtl >= 2 && < 2.3,
-    base >= 4.5 && < 4.8
+    base >= 4.5 && < 5.0
   ghc-options:
     -funbox-strict-fields
   default-extensions:
